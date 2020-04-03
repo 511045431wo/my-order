@@ -1,0 +1,8 @@
+.header{
+    width:100%;
+    height:46px;
+    line-height: 46px;
+    background: red;
+    text-align: center;
+    color:#fff;
+}

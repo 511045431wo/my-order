@@ -1,0 +1,54 @@
+.orderItem{
+    width:100%;
+    height:80px;
+    display: flex;
+    margin-bottom:5px;
+}
+.orderItem__picContainer{
+    width:30%;
+    height:100%;
+    background: red;
+}
+.orderItem__pic{
+    width:100%;
+    height:100%;
+}
+.orderItem__content{
+    width:70%;
+    height:100%;
+    padding-left:2%;
+}
+.orderItem__product{
+    font-size:16px;
+    color:#333;
+    height:33%;
+}
+.orderItem__shop{
+    font-size:14px;
+    color:#999;
+    height:33%;
+}
+.orderItem__detail{
+    width:100%;
+    display: flex;
+    height:33%;
+}
+.orderItem__price{
+    font-size: 18px;
+    color: #BE9E4D;
+    width:70%;
+}
+.orderItem__btn{
+    width:60px;
+    height:20px;
+    line-height: 20px;
+    border:none;
+}
+.orderItem__btn--red{
+    background: red;
+    color:#fff;
+}
+.orderItem__btn--gray{
+    background: #e0e0e0;
+    color:#999;
+}
