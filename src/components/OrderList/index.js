@@ -12,8 +12,9 @@ class OrderList extends Component {
     componentDidMount(){
         fetch('/mock/orders.json').then(result=>{
             if(result.ok){
-                console.log(result)
+                // console.log(result.json())
                 result.json().then(data=>{
+                    console.log(data)
                     this.setState({
                         data
                     })
@@ -27,12 +28,30 @@ class OrderList extends Component {
             <div>
                 {
                     this.state.data.map(item=>{
-                        return <OrderItem key={item.id} data={item}/>
+                        return <OrderItem key={item.id} data={item} onSubmit={this.handleSubmit}/>
                     })
                 }
                 
             </div>
         );
+    }
+    handleSubmit=(id,comment,stars)=>{
+        // fetch("/saveComment").then(()=>{
+
+        // })
+        // 新数据
+        const newData=this.state.data.map(item=>{
+            return item.id===id?
+            {
+                ...item,
+                comment,
+                stars,
+                isCommented:true
+            }:item;
+        })
+        this.setState({
+            data:newData
+        })
     }
 }
 

@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+.app__container{
+  padding:5px 10px;
+  height:calc(100vh - 46px);
+  overflow: scroll;
+}

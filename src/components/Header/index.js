@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import './style.css'
 
 class Header extends Component {
     render() {
         return (
-            <Header className="header">
+            <header className="header">
                  我的订单
-            </Header>
+            </header>
         );
     }
 }
